@@ -431,6 +431,7 @@
 
 /*footer*/
 /* Footer Styles */
+
 .footer {
   background-color: #073b06;
   color: #fff;
@@ -452,7 +453,9 @@
   flex: 1;
   min-width: 250px;
 }
-
+.footer-logo{
+  width: 180px;
+}
 .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
