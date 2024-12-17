@@ -37,7 +37,7 @@
 
         <div class="items">
           <a href="#about" class="item">About</a>
-          <a href="" class="item">Our Speakers</a>
+          <a href="#featured-speakers" class="item">Our Speakers</a>
           <a href="#faq" class="item">FAQ</a>
           <a href="#location" class="item">Event Location</a>
           <a
@@ -179,9 +179,47 @@
     </section>
 
     <!-- Speakers -->
-    <section class="speakers">
-      <div class="container"></div>
+    <section id="featured-speakers" class="featured-speakers">
+      <h2>Meet the Speakers</h2>
+      <div class="speakers-container">
+        
+        <!-- Speaker 1 -->
+        <div class="speaker-card" data-speaker="PAUL FOH">
+          <img src="./MEDIA/RMS FOH.png" alt="Paul Foh">
+          <h3>PAUL FOH</h3>
+          <p>Paul Foh is a wealth coach and real estate expert, <span style="color: #3c8939; font-style: italic; font-weight: 500; text-decoration: underline;">Continue Reading...</span></p>
+        </div>
+        
+        <!-- Speaker 2 -->
+        <div class="speaker-card" data-speaker="Niyi Adesanya">
+          <img src="./MEDIA/RMS NIYI.png" alt="Niyi Adesanya">
+          <h3>NIYI ADESANYA</h3>
+          <p>Niyi Adesanya is a leadership and business advisor who helps CEOs and <span style="color: #3c8939; font-style: italic; font-weight: 500; text-decoration: underline;">Continue Reading...</span></p>
+        </div>
+        <!-- Speaker 3 -->
+        <div class="speaker-card" data-speaker="Emmanuel Olumide">
+          <img src="./MEDIA/RMS OLUMIDE.png" alt="Emmanuel Olumide">
+          <h3>EMMANUEL OLUMIDE</h3>
+          <p>OLUMIDE OLADPO EMMANUEL popularly known as the Common Sense Guru is no doubt <span style="color: #3c8939; font-style: italic; font-weight: 500; text-decoration: underline;">Continue Reading...</span></p>
+        </div>
+        <!-- Speaker 4 -->
+        <div class="speaker-card" data-speaker="Dr. Smith Ezenagu">
+          <img src="./MEDIA/RMS DR. SMITH.png" alt="Dr. Smith Ezenagu">
+          <h3>DR. SMITH EZENAGU</h3>
+          <p>Dr. Smith Ezenagu specializes in business growth strategies and <span style="color: #3c8939; font-style: italic; font-weight: 500; text-decoration: underline;">Continue Reading...</span></p>
+        </div>
+      </div>
     </section>
+    
+    <!-- Popup Modal -->
+    <div id="speaker-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+    
 
     <!-- FAQ -->
     <section class="faq-section" id="faq">

@@ -350,6 +350,118 @@
 
 /*speakers*/
 
+.featured-speakers {
+  padding: 40px 20px;
+  padding: 10px 5%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.featured-speakers h2 {
+  font-size: 3rem;
+  color: #0a5709;
+  margin-bottom: 15px;
+  margin-top: 2rem;
+}
+
+.speakers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.speaker-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.219);
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.speaker-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.speaker-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.speaker-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.speaker-card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+  color: #0a5709;
+}
+
+.modal-content p {
+  color: #333;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Carousel for Smaller Screens */
+@media (max-width: 768px) {
+  .speakers-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .speaker-card {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+    width: auto;
+  }
+}
+
 
 
 /*FAQ*/
@@ -538,7 +650,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2 {
+  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2 {
     font-size: 2.5rem;
   }
   .about-text p {
@@ -556,7 +668,7 @@
   .hero-content p {
     font-size: 1rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2{
+  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2{
     font-size: 2rem;
   }
   .about-image {
@@ -579,7 +691,7 @@
   .hero-content p {
     font-size: 0.7rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2 {
+  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2 {
     font-size: 1.5rem;
   }
   .about-image {
