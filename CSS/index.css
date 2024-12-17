@@ -294,7 +294,12 @@
   width: 100%;
   height: 100%;
   display: flex;
-  background: linear-gradient(to bottom, #010d01, rgba(1, 13, 1, 0.712), rgba(60, 137, 57, 0.548)),
+  background: linear-gradient(
+      to bottom,
+      #010d01,
+      rgba(1, 13, 1, 0.712),
+      rgba(60, 137, 57, 0.548)
+    ),
     url("../MEDIA/1.jpg"); /* Gradient + image */
   background-size: cover;
   background-position: center;
@@ -304,12 +309,13 @@
   padding: 10px 5%;
   margin-top: 2rem;
 }
-.benefit-content h2 {
+.benefit .container h2 {
   font-size: 3rem;
   color: #fff;
   margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
+}
+.benefit-content {
+  margin: 2rem 0;
 }
 .benefit-items {
   width: 100%;
@@ -324,29 +330,39 @@
   max-height: 200px;
   flex: 1;
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-.item i{
-    font-size: 2.5rem;
-    text-align: center;
+.item i {
+  font-size: 2.5rem;
+  text-align: center;
 }
-.item p{
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #fff;
+.item p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
 }
-.one i{color: #adc95f;}
-.two i{color: #fafa4c}
-.three i{color: #7effff;}
-.four i{color: #ddd;}
-.five i{color: #f8bdb1;}
+.one i {
+  color: #adc95f;
+}
+.two i {
+  color: #fafa4c;
+}
+.three i {
+  color: #7effff;
+}
+.four i {
+  color: #ddd;
+}
+.five i {
+  color: #f8bdb1;
+}
 
 /*speakers*/
 
@@ -462,8 +478,6 @@
   }
 }
 
-
-
 /*FAQ*/
 .faq-section {
   padding: 10px 5%;
@@ -506,7 +520,7 @@
 
 .cta-button {
   display: inline-block;
-  background-color: #3c8939; 
+  background-color: #3c8939;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -515,7 +529,7 @@
   transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-  background-color: #aad040; 
+  background-color: #aad040;
 }
 
 /*location*/
@@ -530,7 +544,7 @@
   margin-bottom: 20px;
   margin-top: 3rem;
 }
-.event-location p{
+.event-location p {
   margin-bottom: 1rem;
 }
 .map-container {
@@ -565,7 +579,7 @@
   flex: 1;
   min-width: 250px;
 }
-.footer-logo{
+.footer-logo {
   width: 180px;
 }
 .footer-section h3 {
@@ -574,7 +588,7 @@
   color: #aad040;
 }
 
-.footer-section p a{
+.footer-section p a {
   color: #fff;
 }
 
@@ -617,17 +631,16 @@
   margin: 0;
 }
 
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
   .hero-content h1 {
     font-size: 4rem;
   }
-  .item p{
+  .item p {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
   .about-image {
     display: none;
   }
@@ -650,7 +663,11 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2 {
+  .faq-section h2,
+  .event-location h2,
+  .about-text h2,
+  .featured-speakers h2,
+  .benefit .container h2 {
     font-size: 2.5rem;
   }
   .about-text p {
@@ -668,7 +685,11 @@
   .hero-content p {
     font-size: 1rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2{
+  .faq-section h2,
+  .event-location h2,
+  .about-text h2,
+  .featured-speakers h2,
+  .benefit .container h2 {
     font-size: 2rem;
   }
   .about-image {
@@ -691,7 +712,11 @@
   .hero-content p {
     font-size: 0.7rem;
   }
-  .faq-section h2, .event-location h2, .about-text h2, .featured-speakers h2 {
+  .faq-section h2,
+  .event-location h2,
+  .about-text h2,
+  .featured-speakers h2,
+  .benefit .container h2 {
     font-size: 1.5rem;
   }
   .about-image {
@@ -702,7 +727,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .footer-logo{
+  .footer-logo {
     width: 150px;
   }
 }
