@@ -25,7 +25,7 @@ const closeModal = document.querySelector(".close-modal");
 
 // Data for each speaker
 const speakerData = {
-  "PAUL FOH":
+  "Paul Foh":
     "Paul Foh is a wealth coach and real estate expert, helping individuals and businesses maximize their financial potential.",
   "Niyi Adesanya":
     `Niyi Adesanya is a leadership and business advisor who helps CEOs and other C- Suite executives reinvent themselves
@@ -38,6 +38,8 @@ const speakerData = {
 He is a man of multiple graces whose influence spreads across the religious and secular arena with local and international awards to show for it.`,
   "Dr. Smith Ezenagu":
     "Dr. Smith Ezenagu specializes in business growth strategies and wealth creation, helping businesses scale and achieve financial freedom.",
+    "Ezekiel Solesi":
+    "Ezekiel Solesi is a Strategy expert, Member Forbes Coaches Council, prolific author, insightful speaker and a serial entrepreneur, Host of the monthly LIMBsimple Strategy Factory. He has worked with over 4,000 businesses and helped 46 of them exceed 1 billion naira in revenue/year.",
 };
 
 // Open modal
