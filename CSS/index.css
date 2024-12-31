@@ -586,6 +586,13 @@
   }
 }
 
+/*Video*/
+video {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%;
+}
+
 /*FAQ*/
 .faq-section {
   padding: 10px 5%;
