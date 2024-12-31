@@ -586,22 +586,6 @@
   }
 }
 
-/*Order of event*/
-.event-img {
-  width: 100%; /* Full width of the column */
-  max-height: 350px; /* Consistent height for all images */
-  object-fit: cover; /* Ensures images maintain aspect ratio while fitting the container */
-}
-.bg-light-primary {
-  background-color: #e7f3ff; /* Light blue */
-}
-.bg-light-success {
-  background-color: #e8fce8; /* Light green */
-}
-.bg-light-warning {
-  background-color: #fff8e5; /* Light yellow */
-}
-
 /*FAQ*/
 .faq-section {
   padding: 10px 5%;
