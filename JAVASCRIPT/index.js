@@ -1,5 +1,5 @@
 // Countdown Timer
-const eventDate = new Date("2025-01-25");
+const eventDate = new Date("2025-01-24");
 const countdownText = document.getElementById("countdownText");
 
 function updateCountdown() {
